@@ -1216,6 +1216,48 @@ a.contact-card:hover .contact-arrow { transform: translateX(4px); }
   z-index: 1;
 }
 
+.activity-image {
+  width: 100%;
+  height: 180px;
+  border-radius: calc(var(--radius) - 8px);
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: rgba(99, 179, 237, 0.03);
+  border: 1px dashed rgba(99, 179, 237, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.activity-card:hover .activity-image img {
+  transform: scale(1.05);
+}
+
+.activity-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.activity-image-placeholder svg {
+  width: 28px;
+  height: 28px;
+  opacity: 0.6;
+}
+
 .activity-card h3 {
   font-size: 0.95rem;
   font-weight: 700;
