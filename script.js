@@ -24,25 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ---- Active nav link highlight ---- */
-  const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('.nav-links a');
+  // Nav active state is set directly in HTML via .nav-active class per page
 
-  const highlightNav = () => {
-    let current = '';
-    sections.forEach(sec => {
-      if (window.scrollY >= sec.offsetTop - 120) {
-        current = sec.getAttribute('id');
-      }
-    });
-    navItems.forEach(a => {
-      a.style.color = '';
-      if (a.getAttribute('href') === `#${current}`) {
-        a.style.color = 'var(--accent-blue)';
-      }
-    });
-  };
-
-  window.addEventListener('scroll', highlightNav, { passive: true });
 
   /* ---- Reveal on scroll ---- */
   const revealEls = document.querySelectorAll(

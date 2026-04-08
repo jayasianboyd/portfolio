@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities — Peeratut Waritum</title>
+  <meta name="description"
+    content="Activities and extracurriculars of Peeratut Waritum — university life, IoT projects, open source, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Peeratut Waritum<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" id="nav-about">About</a></li>
+        <li><a href="skills.html" id="nav-skills">Skills</a></li>
+        <li><a href="projects.html" id="nav-projects">Projects</a></li>
+        <li><a href="experience.html" id="nav-experience">Experience</a></li>
+        <li><a href="activities.html" id="nav-activities" class="nav-active">Activities</a></li>
+        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="https://github.com/jayasianboyd" target="_blank" rel="noopener" class="nav-cta" id="nav-github-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        GitHub
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero-bg">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="grid-pattern"></div>
+  </div>
+
+  <!-- Activities Section -->
+  <section id="activities" class="page-section">
+    <div class="container">
+      <div class="section-label">// activities</div>
+      <h1 class="section-title">Beyond the <span class="gradient-text">Code</span></h1>
+      <p class="activities-subtitle">University life, tech communities, and personal growth beyond the keyboard.</p>
+      <div class="activities-grid">
+
+        <div class="activity-card" id="act-hcu">
+          <div class="activity-year">2024</div>
+          <div class="activity-icon">🏫</div>
+          <h3>CS Student at HCU</h3>
+          <p>Actively engaged in the Faculty of Science & Technology at Huachiew Chalermprakiet University — attending
+            workshops, seminars, and participating in department events.</p>
+        </div>
+
+        <div class="activity-card" id="act-iot-project">
+          <div class="activity-year">2024</div>
+          <div class="activity-icon">⚡</div>
+          <h3>IoT Integration Projects</h3>
+          <p>Explored the world of hardware-software integration through Arduino-based IoT projects, developing sensors
+            and embedded solutions for real-world scenarios.</p>
+        </div>
+
+        <div class="activity-card" id="act-fullstack">
+          <div class="activity-year">2023–2024</div>
+          <div class="activity-icon">💻</div>
+          <h3>Full-Stack Development</h3>
+          <p>Self-driven learning journey across the full web stack — from building interactive frontends with React to
+            backend APIs with Node.js and Python.</p>
+        </div>
+
+        <div class="activity-card" id="act-toeic">
+          <div class="activity-year">2025</div>
+          <div class="activity-icon">📝</div>
+          <h3>TOEIC Preparation</h3>
+          <p>Undertaking TOEIC examination preparation to strengthen English communication skills and expand career
+            opportunities on the international stage.</p>
+        </div>
+
+        <div class="activity-card" id="act-github">
+          <div class="activity-year">Ongoing</div>
+          <div class="activity-icon">🐙</div>
+          <h3>Open Source on GitHub</h3>
+          <p>Maintaining public repositories and contributing to collaborative coding. Every project is an opportunity
+            to practice best practices and share knowledge.</p>
+        </div>
+
+        <div class="activity-card" id="act-puzzle">
+          <div class="activity-year">2023</div>
+          <div class="activity-icon">🧩</div>
+          <h3>Game & Algorithm Projects</h3>
+          <p>Implemented classic algorithmic challenges including the 15-Puzzle sliding game — developing stronger
+            problem-solving and logical thinking skills through play.</p>
+        </div>
+
+      </div>
+
+      <!-- Page Navigation -->
+      <div class="page-nav">
+        <a href="experience.html" class="page-nav-prev" id="go-experience-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back: Experience
+        </a>
+        <a href="contact.html" class="page-nav-next" id="go-contact-btn">
+          Next: Contact
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <strong>Peeratut Waritum</strong>
+        <span class="footer-divider">·</span>
+        <a href="https://github.com/jayasianboyd" target="_blank" rel="noopener">@jayasianboyd</a>
+      </p>
+      <p class="footer-quote">"Analyze → Optimize → Improve"</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
