@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peeratut Waritum — Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Peeratut Waritum (jayasianboyd) — CS Student, Full-Stack Developer & IoT Enthusiast at Huachiew Chalermprakiet University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Peeratut Waritum<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#activities" id="nav-activities">Activities</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="https://github.com/jayasianboyd" target="_blank" rel="noopener" class="nav-cta" id="nav-github-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        GitHub
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="grid-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="hero-greeting">Hello, I'm</span>
+        <span class="hero-title">Peeratut<br /><em>Waritum</em></span>
+      </h1>
+      <p class="hero-tagline">
+        I approach software like a game — <span class="highlight">Analyze</span> → <span
+          class="highlight">Optimize</span> → <span class="highlight">Improve</span>
+      </p>
+      <div class="hero-roles">
+        <span class="role-tag">Full-Stack Developer</span>
+        <span class="role-divider">·</span>
+        <span class="role-tag">IoT Enthusiast</span>
+        <span class="role-divider">·</span>
+        <span class="role-tag">CS Student</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View Projects</a>
+        <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Repositories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3rd</span>
+          <span class="stat-label">Year CS Student</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Problems Solved</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-code-card">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+          <span class="code-filename">profile.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-string">"Peeratut Waritum"</span>,
+  <span class="c-prop">alias</span>: <span class="c-string">"jayasianboyd"</span>,
+  <span class="c-prop">university</span>: <span class="c-string">"HCU"</span>,
+  <span class="c-prop">year</span>: <span class="c-num">3</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-string">"JavaScript"</span>,
+    <span class="c-string">"React"</span>,
+    <span class="c-string">"Node.js"</span>,
+    <span class="c-string">"Python"</span>,
+    <span class="c-string">"Arduino"</span>,
+  ],
+  <span class="c-prop">philosophy</span>: <span class="c-string">"Analyze → Optimize → Improve"</span>,
+  <span class="c-prop">openTo</span>: <span class="c-keyword">true</span>,
+};</code></pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" id="scroll-hint-btn">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">// about me</div>
+      <h2 class="section-title">Organized. Systematic. <span class="gradient-text">Always Troubleshooting.</span></h2>
+      <div class="about-grid">
+        <div class="about-card" id="about-education-card">
+          <div class="about-icon">🎓</div>
+          <h3>Education</h3>
+          <p>3rd-Year Computer Science student at <strong>Huachiew Chalermprakiet University</strong>, Faculty of
+            Science and Technology. Building a strong foundation in software engineering principles.</p>
+        </div>
+        <div class="about-card" id="about-focus-card">
+          <div class="about-icon">💡</div>
+          <h3>Focus</h3>
+          <p>Passionate about <strong>Full-Stack Development</strong> and <strong>IoT Integration</strong>. I love
+            building end-to-end solutions that bridge the digital and physical worlds.</p>
+        </div>
+        <div class="about-card" id="about-goal-card">
+          <div class="about-icon">🌍</div>
+          <h3>Current Goal</h3>
+          <p>Preparing for <strong>TOEIC</strong> to unlock global career opportunities. Continuously improving both
+            technical and communication skills to compete on the world stage.</p>
+        </div>
+        <div class="about-card about-card-wide" id="about-philosophy-card">
+          <div class="about-icon">🎯</div>
+          <h3>My Philosophy</h3>
+          <p>I approach software <strong>like a game</strong>: there's always a way to analyze the problem, optimize the
+            flow, and improve the final result. Every bug is a puzzle waiting to be solved — and I never stop until it
+            works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">// tech stack</div>
+      <h2 class="section-title">Tools I Work <span class="gradient-text">With</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category" id="skill-frontend">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🖥️</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-js">JavaScript</span>
+            <span class="skill-tag skill-react">React</span>
+            <span class="skill-tag skill-html">HTML5</span>
+            <span class="skill-tag skill-css">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-backend">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-node">Node.js</span>
+            <span class="skill-tag skill-python">Python</span>
+            <span class="skill-tag skill-php">PHP</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-iot">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📡</span>
+            <h3>IoT & Hardware</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-arduino">Arduino</span>
+            <span class="skill-tag skill-embedded">Embedded C</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-tools">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-git">Git</span>
+            <span class="skill-tag skill-github">GitHub</span>
+            <span class="skill-tag skill-vscode">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Proficiency Bars -->
+      <div class="proficiency-grid">
+        <div class="proficiency-item">
+          <div class="prof-label"><span>JavaScript</span><span class="prof-pct">85%</span></div>
+          <div class="prof-bar">
+            <div class="prof-fill" data-width="85" style="--w:85%"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="prof-label"><span>React</span><span class="prof-pct">75%</span></div>
+          <div class="prof-bar">
+            <div class="prof-fill" data-width="75" style="--w:75%"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="prof-label"><span>Python</span><span class="prof-pct">80%</span></div>
+          <div class="prof-bar">
+            <div class="prof-fill" data-width="80" style="--w:80%"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="prof-label"><span>Node.js</span><span class="prof-pct">70%</span></div>
+          <div class="prof-bar">
+            <div class="prof-fill" data-width="70" style="--w:70%"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="prof-label"><span>Arduino / IoT</span><span class="prof-pct">72%</span></div>
+          <div class="prof-bar">
+            <div class="prof-fill" data-width="72" style="--w:72%"></div>
+          </div>
+        </div>
+        <div class="proficiency-item">
+          <div class="prof-label"><span>PHP</span><span class="prof-pct">60%</span></div>
+          <div class="prof-bar">
+            <div class="prof-fill" data-width="60" style="--w:60%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">// projects</div>
+      <h2 class="section-title">Things I've <span class="gradient-text">Built</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card" id="project-dooduang">
+          <div class="project-top">
+            <div class="project-icon-wrap">📱</div>
+            <div class="project-links">
+              <a href="https://github.com/jayasianboyd/Dooduang" target="_blank" rel="noopener" aria-label="GitHub link"
+                class="icon-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Dooduang</h3>
+          <p class="project-desc">A JavaScript web application project built with modern web technologies. Showcasing
+            frontend development skills with interactive UI elements.</p>
+          <div class="project-tags">
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">Web App</span>
+          </div>
+        </div>
+
+        <div class="project-card project-featured" id="project-library-face">
+          <div class="featured-badge">Featured</div>
+          <div class="project-top">
+            <div class="project-icon-wrap">🤖</div>
+            <div class="project-links">
+              <a href="https://github.com/jayasianboyd/Library-Face-Recognition" target="_blank" rel="noopener"
+                aria-label="GitHub link" class="icon-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Library Face Recognition</h3>
+          <p class="project-desc">An intelligent library access system leveraging face recognition technology. Automates
+            user authentication and streamlines library management workflows.</p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">AI / CV</span>
+            <span class="p-tag">Face Recognition</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-parking">
+          <div class="project-top">
+            <div class="project-icon-wrap">🚗</div>
+            <div class="project-links">
+              <a href="https://github.com/jayasianboyd/parking_system1" target="_blank" rel="noopener"
+                aria-label="GitHub link" class="icon-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Parking System</h3>
+          <p class="project-desc">A comprehensive parking management system built with PHP. Handles vehicle
+            registration, slot allocation, and real-time parking space monitoring.</p>
+          <div class="project-tags">
+            <span class="p-tag">PHP</span>
+            <span class="p-tag">System Design</span>
+            <span class="p-tag">Database</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-puzzle">
+          <div class="project-top">
+            <div class="project-icon-wrap">🧩</div>
+            <div class="project-links">
+              <a href="https://github.com/jayasianboyd/15-puzzle" target="_blank" rel="noopener"
+                aria-label="GitHub link" class="icon-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">15-Puzzle Game</h3>
+          <p class="project-desc">A classic 15-puzzle sliding game implemented in JavaScript. Demonstrates algorithmic
+            thinking, DOM manipulation, and game state management skills.</p>
+          <div class="project-tags">
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">Algorithm</span>
+            <span class="p-tag">Game</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta">
+        <a href="https://github.com/jayasianboyd?tab=repositories" target="_blank" rel="noopener"
+          class="btn btn-outline" id="all-repos-btn">
+          View All Repositories
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">// experience & education</div>
+      <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item" id="exp-hcu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 — Present</div>
+          <div class="timeline-card">
+            <div class="timeline-badge">🎓 Education</div>
+            <h3>B.Sc. Computer Science</h3>
+            <p class="timeline-org">Huachiew Chalermprakiet University · Faculty of Science & Technology</p>
+            <p class="timeline-desc">Currently in 3rd year, focusing on full-stack development, IoT systems, and software engineering principles. Building a strong foundation across both theory and hands-on projects.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Full-Stack Dev</span>
+              <span class="tl-tag">IoT</span>
+              <span class="tl-tag">Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-facerec">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-card">
+            <div class="timeline-badge">🤖 Project</div>
+            <h3>Library Face Recognition System</h3>
+            <p class="timeline-org">Academic Project · HCU</p>
+            <p class="timeline-desc">Designed and developed an intelligent library access system using face recognition technology to automate user authentication and streamline library management.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">AI / Computer Vision</span>
+              <span class="tl-tag">HTML</span>
+              <span class="tl-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-parking">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-card">
+            <div class="timeline-badge">🚗 Project</div>
+            <h3>Smart Parking Management System</h3>
+            <p class="timeline-org">Academic Project · HCU</p>
+            <p class="timeline-desc">Built a full parking management web system with PHP covering vehicle registration, slot allocation, and real-time space monitoring — applying both backend logic and database design skills.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">PHP</span>
+              <span class="tl-tag">MySQL</span>
+              <span class="tl-tag">System Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <div class="container">
+      <div class="section-label">// certificates</div>
+      <h2 class="section-title">Achievements & <span class="gradient-text">Certifications</span></h2>
+      <div class="cert-grid">
+
+        <div class="cert-card" id="cert-hcu-honor">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-body">
+            <h3>Academic Excellence Award</h3>
+            <p class="cert-issuer">Huachiew Chalermprakiet University</p>
+            <p class="cert-desc">Recognized for outstanding academic performance, exemplary conduct, volunteering spirit, and positive contribution to the university community.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" id="cert-github">
+          <div class="cert-icon">🐙</div>
+          <div class="cert-body">
+            <h3>GitHub Profile — Active Developer</h3>
+            <p class="cert-issuer">GitHub · @jayasianboyd</p>
+            <p class="cert-desc">Maintained an active open-source presence with 5 public repositories spanning JavaScript, Python, PHP, and HTML projects.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" id="cert-toeic">
+          <div class="cert-icon">🌍</div>
+          <div class="cert-body">
+            <h3>TOEIC Preparation</h3>
+            <p class="cert-issuer">In Progress</p>
+            <p class="cert-desc">Actively preparing for the TOEIC examination to achieve international English proficiency certification and unlock global career opportunities.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" id="cert-iot">
+          <div class="cert-icon">📡</div>
+          <div class="cert-body">
+            <h3>IoT & Arduino Development</h3>
+            <p class="cert-issuer">Self-Directed Learning</p>
+            <p class="cert-desc">Hands-on experience in embedded systems and IoT hardware integration using Arduino — bridging the digital and physical worlds through code.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities">
+    <div class="container">
+      <div class="section-label">// activities</div>
+      <h2 class="section-title">Beyond the <span class="gradient-text">Code</span></h2>
+      <p class="activities-subtitle">University life, tech communities, and personal growth beyond the keyboard.</p>
+      <div class="activities-grid">
+
+        <div class="activity-card" id="act-hcu">
+          <div class="activity-year">2024</div>
+          <div class="activity-icon">🏫</div>
+          <h3>CS Student at HCU</h3>
+          <p>Actively engaged in the Faculty of Science & Technology at Huachiew Chalermprakiet University — attending workshops, seminars, and participating in department events.</p>
+        </div>
+
+        <div class="activity-card" id="act-iot-project">
+          <div class="activity-year">2024</div>
+          <div class="activity-icon">⚡</div>
+          <h3>IoT Integration Projects</h3>
+          <p>Explored the world of hardware-software integration through Arduino-based IoT projects, developing sensors and embedded solutions for real-world scenarios.</p>
+        </div>
+
+        <div class="activity-card" id="act-fullstack">
+          <div class="activity-year">2023–2024</div>
+          <div class="activity-icon">💻</div>
+          <h3>Full-Stack Development</h3>
+          <p>Self-driven learning journey across the full web stack — from building interactive frontends with React to backend APIs with Node.js and Python.</p>
+        </div>
+
+        <div class="activity-card" id="act-toeic">
+          <div class="activity-year">2025</div>
+          <div class="activity-icon">📝</div>
+          <h3>TOEIC Preparation</h3>
+          <p>Undertaking TOEIC examination preparation to strengthen English communication skills and expand career opportunities on the international stage.</p>
+        </div>
+
+        <div class="activity-card" id="act-github">
+          <div class="activity-year">Ongoing</div>
+          <div class="activity-icon">🐙</div>
+          <h3>Open Source on GitHub</h3>
+          <p>Maintaining public repositories and contributing to collaborative coding. Every project is an opportunity to practice best practices and share knowledge.</p>
+        </div>
+
+        <div class="activity-card" id="act-puzzle">
+          <div class="activity-year">2023</div>
+          <div class="activity-icon">🧩</div>
+          <h3>Game & Algorithm Projects</h3>
+          <p>Implemented classic algorithmic challenges including the 15-Puzzle sliding game — developing stronger problem-solving and logical thinking skills through play.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">// contact</div>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="contact-subtitle">I'm currently open to internship and collaboration opportunities. Feel free to reach out!</p>
+      <div class="contact-grid contact-grid-2">
+        <a href="https://github.com/jayasianboyd" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@jayasianboyd</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+        <div class="contact-card" id="contact-location">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Bangkok, Thailand</span>
+          </div>
+        </div>
+        <div class="contact-card" id="contact-university">
+          <div class="contact-icon">🎓</div>
+          <div class="contact-info">
+            <span class="contact-label">University</span>
+            <span class="contact-value">Huachiew Chalermprakiet University</span>
+          </div>
+        </div>
+        <div class="contact-card" id="contact-status">
+          <div class="contact-icon">✅</div>
+          <div class="contact-info">
+            <span class="contact-label">Status</span>
+            <span class="contact-value">Open to Opportunities</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-cta-box" id="contact-cta-box">
+        <div class="cta-box-inner">
+          <h3>Looking for an Internship</h3>
+          <p>I'm actively seeking internship positions in Full-Stack Development or IoT. Let's discuss how I can contribute to your team!</p>
+          <a href="https://github.com/jayasianboyd" target="_blank" rel="noopener" class="btn btn-primary" id="contact-cta-btn">View My GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <strong>Peeratut Waritum</strong>
+        <span class="footer-divider">·</span>
+        <a href="https://github.com/jayasianboyd" target="_blank" rel="noopener">@jayasianboyd</a>
+      </p>
+      <p class="footer-quote">"Analyze → Optimize → Improve"</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
