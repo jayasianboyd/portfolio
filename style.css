@@ -1238,8 +1238,31 @@ a.contact-card:hover .contact-arrow { transform: translateX(4px); }
   transition: transform var(--transition);
 }
 
-.activity-card:hover .activity-image img {
+.activity-card:hover .activity-image:not(:has(.image-gallery)) img {
   transform: scale(1.05);
+}
+
+.image-gallery {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.image-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+  background: var(--accent-blue);
+  border-radius: 10px;
+}
+
+.image-gallery img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
 }
 
 .activity-image-placeholder {
