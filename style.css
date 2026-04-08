@@ -609,8 +609,17 @@ section:nth-child(even):not(#hero) {
 }
 
 .about-icon {
-  font-size: 2rem;
-  margin-bottom: 14px;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(99,179,237,0.12), rgba(183,148,244,0.12));
+  border: 1px solid rgba(99,179,237,0.2);
+  color: var(--accent-blue);
+  margin-bottom: 18px;
+  flex-shrink: 0;
 }
 
 .about-card h3 {
@@ -656,7 +665,18 @@ section:nth-child(even):not(#hero) {
   margin-bottom: 16px;
 }
 
-.skill-cat-icon { font-size: 1.4rem; }
+.skill-cat-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(99,179,237,0.1);
+  border: 1px solid rgba(99,179,237,0.15);
+  color: var(--accent-blue);
+  flex-shrink: 0;
+}
 
 .skill-cat-header h3 {
   font-size: 1rem;
@@ -1040,7 +1060,15 @@ section:nth-child(even):not(#hero) {
 a.contact-card:hover .contact-arrow { transform: translateX(4px); }
 
 .contact-icon {
-  font-size: 1.8rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(99,179,237,0.1), rgba(183,148,244,0.1));
+  border: 1px solid rgba(99,179,237,0.15);
+  color: var(--accent-blue);
   flex-shrink: 0;
 }
 
