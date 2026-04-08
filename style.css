@@ -799,6 +799,130 @@ section:nth-child(even):not(#hero) {
 
 .icon-link:hover { color: var(--accent-blue); }
 
+/* ---- Academic Project Cards (Light Theme Match) ---- */
+.academic-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .academic-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.academic-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.academic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.acad-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fc8181;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.acad-title {
+  font: var(--font-main);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.acad-subtitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #4a5568;
+  margin-bottom: 16px;
+}
+
+.acad-desc {
+  font-size: 0.9rem;
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.acad-features {
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  flex-grow: 1; /* Push tags to the bottom */
+}
+
+.acad-features-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #4a5568;
+  margin-bottom: 12px;
+}
+
+.acad-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acad-features li {
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.acad-features li:last-child {
+  margin-bottom: 0;
+}
+
+.acad-features li::before {
+  content: "▸";
+  color: #fc8181;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.9rem;
+}
+
+.acad-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.acad-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  padding: 5px 14px;
+  border-radius: 100px;
+}
+
 .project-name {
   font-size: 1.1rem;
   font-weight: 700;

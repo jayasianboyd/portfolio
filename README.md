@@ -25,7 +25,6 @@ This portfolio is a multi-page website, designed for clean separation of concern
 - `index.html`: Hero section and About Me.
 - `skills.html`: Technical skills, tech stack, and proficiencies.
 - `projects.html`: Showcase of the projects I've built.
-- `experience.html`: My professional and academic experience.
 - `activities.html`: Extracurricular activities, certifications, and participations.
 - `contact.html`: Ways to get in touch with me.
 - `style.css`: The central stylesheet containing all design tokens and utility classes.
