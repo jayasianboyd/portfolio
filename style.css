@@ -999,12 +999,12 @@ section:nth-child(even):not(#hero) {
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  background: #edf2f7;
-  color: #718096;
+  background: rgba(148, 163, 184, 0.08);
+  color: var(--text-muted);
   border-radius: 8px;
   font-size: 0.78rem;
   font-weight: 600;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
 }
 
 .project-name {
@@ -1375,6 +1375,38 @@ a.contact-card:hover .contact-arrow { transform: translateX(4px); }
 /* ============================================
    ACTIVITIES
    ============================================ */
+
+/* Section badge (replaces inline styles in activities.html) */
+.section-badge-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.section-badge-wrapper.mt-large {
+  margin-top: 64px;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-badge-icon {
+  display: flex;
+  align-items: center;
+  color: var(--accent-blue);
+}
+
 .activities-subtitle {
   font-size: 1.05rem;
   color: var(--text-secondary);
